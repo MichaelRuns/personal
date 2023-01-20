@@ -9,13 +9,14 @@ function App() {
     firstTime?
     <div className="App-header">
       <div>Welcome!</div>
-      <button className='Welcome-button' onClick={() => setFirstTime(false)}>Enter</button>
+      <button className='Welcome-button' onClick={() => setFirstTime(!firstTime)}>Enter</button>
     </div>
     :
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Test/>
+        <button className='Welcome-button' onClick={() => setFirstTime(!firstTime)} style={{backgroundColor:'red'}}>return</button>
       </header>
     </div>
     
