@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import logo from './laugh.png';
 import './App.css';
+import {Test} from './test.js';
+import React, {useState} from 'react';
 
 function App() {
+  const [firstTime, setFirstTime] = useState(true);
   return (
+    firstTime?
+    <div className="App-header">
+      <div>Welcome!</div>
+      <button className='Welcome-button' onClick={() => setFirstTime(false)}>Enter</button>
+    </div>
+    :
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Test/>
       </header>
     </div>
+    
   );
 }
 

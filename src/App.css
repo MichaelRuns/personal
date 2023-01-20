@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  z-index: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,7 +28,23 @@
 .App-link {
   color: #61dafb;
 }
-
+.Test {
+  color: red;
+  z-index: 1;
+}
+.Welcome-button {
+  background-color: #036936;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
